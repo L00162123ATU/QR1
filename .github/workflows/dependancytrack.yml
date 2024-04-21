@@ -28,7 +28,7 @@ jobs:
 
     - name: Generate CycloneDX BOM
       run: |
-        cyclonedx-py -e -o bom.xml
+        cyclonedx-py -e -o bom.xml environment
 
     - name: Upload BOM to Dependency-Track
       run: |
